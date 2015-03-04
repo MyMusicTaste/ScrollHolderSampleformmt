@@ -1,6 +1,7 @@
 package com.mymusictaste.scrollholdersample.fragment;
 
 import android.os.Bundle;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import com.mymusictaste.scrollholdersample.R;
 import com.mymusictaste.scrollholdersample.adapter.SampleAdapter;
 import com.mymusictaste.scrollholdersample.type.Sample;
+import com.mymusictaste.scrollholdersample.util.AppUtil;
 import com.mymusictaste.scrollholdersample.util.Constants;
 
 import java.util.ArrayList;
@@ -98,7 +100,7 @@ public class SampleListFragment extends ScrollHolderFragment implements AbsListV
                 .listener(new OnRefreshListener() {
                     @Override
                     public void onRefreshStarted(View view) {
-
+                        mPullToRefreshLayout.setRefreshComplete();
                     }
                 })
                         // Finally commit the setup to our PullToRefreshLayout

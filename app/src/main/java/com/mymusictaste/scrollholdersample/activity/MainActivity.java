@@ -158,7 +158,7 @@ public class MainActivity extends ScrollHolderActivity implements ScrollTabHolde
     }
     @Override
     protected void populateUi(){
-        mHeaderPicture.setImageDrawable(getResources().getDrawable(R.drawable.main_promot));
+        mHeaderPicture.setImageDrawable(getResources().getDrawable(R.drawable.landscape_82968_640));
         mViewPager.setOffscreenPageLimit(3);
 
         mPagerAdapter = new PagerAdapter(getSupportFragmentManager());
@@ -177,7 +177,7 @@ public class MainActivity extends ScrollHolderActivity implements ScrollTabHolde
     }
 
 
-    public void setSettingScroll(){
+    public void setSampleScroll(){
         if(mViewPager.getCurrentItem() == mPagerAdapter.getCount()-1){
             ViewHelper.setTranslationY(mHeader, -AppUtil.getPxFromDP(48)+AppUtil.getPxFromDP(48));
             mPagerSlidingTabStrip.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
