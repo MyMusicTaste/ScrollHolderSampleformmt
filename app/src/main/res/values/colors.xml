@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="half_transparent">#88000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="background_list">#E4E4E4</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="tab_selected_color">#EE524F</color>
+    <color name="tab_strip_background">#606060</color>
+
+    <color name="list_title">#202020</color>
+    <color name="list_description">#606060</color>
+    <color name="refresh_background">#EE5247</color>
+    <color name="refresh_progress">#606060</color>
+</resources>
